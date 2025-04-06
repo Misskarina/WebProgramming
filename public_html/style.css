@@ -1,0 +1,50 @@
+/* Gradient background for the whole page */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right top, #800080, #4b0082);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* To-Do container with shadow and rounded corners */
+.todo-container {
+  background: lightsteelblue;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  text-align: center;
+}
+
+/* Title styling */
+.todo-container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  color: #333;
+}
+
+
+/* Individual task styling */
+.todo-list li {
+  background: #f3f4f6;
+  margin-bottom: 0.75rem;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.todo-list li:hover {
+  background: #e2e8f0;
+}
+
+/* Checkbox spacing */
+.todo-list input[type="checkbox"] {
+  margin-right: 0.75rem;
+  transform: scale(1.2);
+}
